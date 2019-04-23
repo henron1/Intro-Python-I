@@ -22,3 +22,9 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+now = datetime.now()
+
+def newCal(month = now.month, year=now.year):
+  c = calendar.textCalendar(firstweekday=6)
+  cal = c.formatmonth(year, month)
